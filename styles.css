@@ -1,0 +1,128 @@
+:root {
+    --color-purple:#7259c2;
+    --maxw:1200px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #000000f1;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+header{
+    width: 100%;
+    padding: 30px 0;
+    background-color: var(--color-purple) ;
+    margin-bottom: 32px;
+    border-bottom: 5px solid black ;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .social img{
+    margin: 0 20px;
+    opacity: 0.7;
+    transition: 500ms;
+}
+
+header .social img:hover {
+    opacity: 1;
+}
+
+header ul{
+   list-style: none;
+}
+
+header ul a{
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0.7;
+    transition: 500ms;
+}
+
+header ul a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+
+#nav {
+    display: flex;
+    justify-content: center;
+    max-width: var(--maxw);
+}
+
+#wrapper {
+    margin: 0 auto;
+    text-align: center;
+    max-width: var(--maxw);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+
+}
+
+#wrapper h1 {
+    padding: 32px;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+#wrapper p {
+    font-size: 18px;
+    line-height: 32px;
+    opacity: 0.8;
+    text-align: justify;
+    margin-left:62px ;
+}
+
+#rocket {
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid var(--color-purple);
+    box-shadow: black 1px 1px 30px 15px;
+}
+
+#tecnologias{
+    max-width: var(--maxw);
+    padding: 32px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px auto;
+}
+
+#tecnologias .container{
+    text-align: center;
+}
+
+#tecnologias .container h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+#tecnologias .container ul li {
+    display: inline;
+    margin: 0 32px ;
+}
+
+#tecnologias .container img {
+    width: 100px;
+    height: 100px;
+}
