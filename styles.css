@@ -126,3 +126,49 @@ header ul a:hover {
     width: 100px;
     height: 100px;
 }
+ /*=== CONTEUDO ===*/
+
+.cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    max-width: 1180px;
+    margin: 0  auto;
+    gap: 15px;
+    align-items: center;
+
+}
+
+.cursos .curso {
+    max-width: 400px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.050);
+    padding: 68px 0;
+    cursor: pointer;
+    box-shadow: black 2px 2px 15px;
+    transition: 600ms;
+}
+
+.cursos .curso:hover,
+.cursos span:hover {
+   border: 2px solid var(--color-purple);
+   transform: scale(1.01);
+   color: var(--color-purple);
+
+}
+
+.cursos span {
+    font-size: 20px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.cursos img {
+ padding: 68px;
+}
+
+.cursos .content{
+    font-size: 20px;
+    line-height: 28px;
+
+}   
