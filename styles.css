@@ -182,7 +182,6 @@ header ul a:hover {
     top: 0;
     opacity: 0;
     visibility: hidden;
-    transition: 400ms;
 }
 
 .modal {
@@ -191,6 +190,14 @@ header ul a:hover {
     margin: 5vh auto;
     background-color:white;
     position: relative;
+}
+
+.modal span {
+    color: black;
+    position: absolute;
+    right: 40px;
+    top: 8px;
+    cursor: pointer;
 }
 
 .modal .close {
@@ -208,9 +215,16 @@ header ul a:hover {
     visibility: visible;
 }
 
+.modal.maximize{
+    width:100vw;
+    height:100vh;
+    margin:0;
+}
+
 iframe {
     width: 100%;
     height: 90%;
     position: absolute; /* absolute utiliza como referencia a tela inteiro/pai */
     top: 5%;
+    
 }
