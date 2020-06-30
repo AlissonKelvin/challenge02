@@ -4,6 +4,8 @@
 
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="https://www.flaticon.com/premium-icon/icons/svg/3058/3058461.svg" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
@@ -28,7 +30,7 @@
     </header>
     <main>
         <section class="cursos">
-            <div class="curso">
+            <div class="curso" id="starter">
                 <span>1</span>
                 <div class="image-curso">
                     <img src="https://skylab.rocketseat.com.br/static/media/Starter.64c237cc.svg" alt="Starter">
@@ -38,7 +40,7 @@
                 </div>
             </div>
 
-            <div class="curso">
+            <div class="curso" id="launchbase">
                 <span>2</span>
                 <div class="image-curso">
                     <img src="https://skylab.rocketseat.com.br/static/media/LaunchBase.08285320.svg" alt="LaunchBase">
@@ -48,7 +50,7 @@
                 </div>
             </div>
 
-            <div class="curso">
+            <div class="curso" id="gostack">
                 <span>3</span>
                 <div class="image-curso">
                     <img src="https://skylab.rocketseat.com.br/static/media/GoStack.83a178a0.svg" alt="GoStack">
@@ -60,5 +62,20 @@
         </section>
     </main>
 
+    <section class="modal-overlay">
+        <div class="modal">
+
+            <a class="close">
+                <i class="material-icons">close</i>
+            </a>
+
+            <div class="modal-content">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
